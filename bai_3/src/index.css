@@ -6,4 +6,8 @@
 button{
   width: 100px;
   height: 50px;
+  margin: 10px;
+}
+.all{
+  padding: 20px;
 }

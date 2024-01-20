@@ -58,9 +58,39 @@ setTinder([...tinder]);
 };
 
 return (
+
 <div>
 <h1>{JSON.stringify(tinder)}</h1>
 <button onClick={onAddTinder}>button</button>
 </div>
 )
 }
+
+import React , {useState}from 'react'
+
+const App = () => {
+const [person,setPerson] = useState({
+name: 'Mindx',
+age : 20,
+});
+
+const onChangeName = () => {
+const value = prompt('Change Name');
+setPerson({...person, name: value});
+};
+const onChangeAge = () => {
+const value = +prompt('Change Age');
+setPerson({...person, age: value});
+};
+
+return (
+<div className='all'>  
+ <h1>{person.name}</h1>
+<h1>{person.age}</h1>
+<button onClick={onChangeName}>Change Name</button>
+<button onClick={onChangeAge}>Change Age</button>
+</div>
+)
+}
+
+export default App
