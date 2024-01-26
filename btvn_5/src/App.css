@@ -1,0 +1,147 @@
+.body{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15%;
+  gap: 50px;
+  background-color: rgb(239, 239, 239);
+  height: 100%;
+  font-family: sans-serif;
+}
+h1{
+  font-size: 30px;
+}
+.header{
+  text-align: center;
+}
+.main{
+  display: flex;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.214);
+}
+.main-right{
+  background-color: rgb(76, 110, 76);
+  width: 100%;
+  flex: 1;
+
+}
+.main-left{
+  width: 100%;
+  flex: 1;
+  background-color: white;
+}
+.main-left-in{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+.input-all{
+  padding: 10px;
+  padding-left:0px ;
+  border: 1px solid white;
+  border-bottom: 1.5px solid rgb(183, 183, 183) ;
+}
+.form-sign-up{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.name-input{
+  font-size: 11px;
+  color: rgb(149, 149, 149);
+  margin-top: 25px;
+}
+.header-main-2{
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(149, 149, 149);
+}
+.btn{
+  padding: 8px 0px;
+  margin-top: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(76, 110, 76);
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.footer-main{
+  margin-top: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-main p{
+  color: rgb(97, 97, 97);
+  text-align: center;
+}
+.link-sign-in{
+  color: rgb(5, 170, 5);
+  text-decoration: none;
+  margin-left: 3px;
+}
+img{
+  width: 30px;
+  height: 30px;
+  margin: 10px 8px;
+}
+.img-contact{
+  padding: 0 auto;
+  text-align: center;
+}
+input:focus{
+  outline: none;
+}
+.img-football{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.img-content{
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-top: 10px;
+  border: 5px solid white;
+}
+.main-right-in{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.img-all{
+  display: flex;
+  justify-content: center;
+}
+.header-football{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.text{
+  color: rgb(237, 237, 237);
+  font-size: 12px;
+  text-align: center;
+}
+.btn-football{
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: rgb(76, 110, 76);
+  border: 1.5px solid white;
+  color: white;
+  cursor: pointer;
+}
+.btn-all{
+  display: flex;
+  justify-content: center;
+}
+.main-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
