@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f8f8ff;
+  padding: 30px 50px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.item{
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.item-all{
+  background-color: wheat;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
