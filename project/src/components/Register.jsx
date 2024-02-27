@@ -51,6 +51,14 @@ const Register = () => {
         }
         return true;
     };
+    const checkPassLength = (field) => {
+        if (!touched[field]) return true;
+        if(value[field] == 0) return true;
+        if(value[field].length < 6){
+            return false;
+        }
+        return true;
+    }
 
     const checkRepeatUseName = () => {
         let count = 0;
@@ -94,6 +102,20 @@ const Register = () => {
             });
         } else if (!value.nameRegister || !value.useNameRegister || !value.passwordRegister || !value.passwordRegisterAgain) {
             setErrorMessage("Vui lòng nhập đầy đủ thông tin");
+            setValue({
+                nameRegister: "",
+                useNameRegister: "",
+                passwordRegister: "",
+                passwordRegisterAgain: "",
+            });
+            setTouched({
+                nameRegister: false,
+                useNameRegister: false,
+                passwordRegister: false,
+                passwordRegisterAgain: false,
+            });
+        } else if (value.passwordRegister.length < 6){
+            setErrorPassAgain("Mật khẩu phải chứa ít nhất 6 ký tự");
             setValue({
                 nameRegister: "",
                 useNameRegister: "",
@@ -167,7 +189,7 @@ const Register = () => {
                 </div>
                 <div className='label-input'>
                     <label>Tên đăng nhập</label>
-                    <input className='login-app-input' type='text' placeholder='Tên đăng nhập' value={value.useNameRegister} onChange={onChangeValue('useNameRegister')} onBlur={onBlurField("useNameRegister")} />
+                    <input className='login-app-input' type="email" placeholder='Email' value={value.useNameRegister} onChange={onChangeValue('useNameRegister')} onBlur={onBlurField("useNameRegister")} />
                     {!check("useNameRegister") && <p className='error-register'>Vui lòng nhập tên đăng nhập</p>}
                     {!checkRepeatUseName() && <p className='error-register'>Tên đăng nhập đã có người sử dụng</p>}
                 </div>
@@ -175,6 +197,7 @@ const Register = () => {
                     <label>Mật khẩu</label>
                     <input className='login-app-input' type='password' placeholder='Mật khẩu' value={value.passwordRegister} onChange={onChangeValue('passwordRegister')} onBlur={onBlurField("passwordRegister")}/>
                     {!check("passwordRegister") && <p className='error-register'>Vui lòng nhập mật khẩu</p>}
+                    {!checkPassLength("passwordRegister") && <p className='error-register'>Mật khẩu phải chứa ít nhất 6 kí tự</p>}
                     {errorPassAgain && <p className='error-register'>{errorPassAgain}</p>}
                 </div>
                 <div className='label-input'>
@@ -184,7 +207,7 @@ const Register = () => {
                 </div>
             
                 <div className='login-app-button-all'>
-                    <button type="submit" className='login-app-button' onClick={onClickRegister}>Đăng Ký</button>
+                    <button type="submit" className='login-app-button' onSubmit={onClickRegister}>Đăng Ký</button>
                 </div>
             </form>
         </div>

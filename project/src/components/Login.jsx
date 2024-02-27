@@ -12,6 +12,7 @@ const Login = () => {
   })
   
   const [errorLogin, setErrorLogin] = useState("")
+  const [errorPassAgain, setErrorPassAgain] = useState("")
 
   let register = localStorage.getItem("register")
   register = register ? JSON.parse(register) : []
@@ -36,6 +37,15 @@ const Login = () => {
     return true;
   };
 
+  const checkPassLength = (field) => {
+    if (!touched[field]) return true;
+    if(value[field] == 0) return true;
+    if(value[field].length < 6){
+        return false;
+    }
+    return true;
+}
+
   const login = [];
   const onClickLogin = (e) => {
     e.preventDefault();
@@ -49,6 +59,9 @@ const Login = () => {
     sessionStorage.setItem('login', JSON.stringify(login));
     if( count == 0){
       setErrorLogin("Thông tin tài khoản hoặc mật khẩu không chính xác")
+      setTimeout(() => {
+        setErrorLogin("");
+      }, 2000);
       setTouched({
         useName: false,
         password: false,
@@ -57,8 +70,16 @@ const Login = () => {
         useName: "",
         password: "",
       });
-    }
-    else{
+    } else if (value.passwordRegister.length < 6){
+      setErrorPassAgain("Mật khẩu phải chứa ít nhất 6 ký tự");
+      setValue({
+          useName: "",
+          password: "",
+      });
+      setTouched({
+          useName: false,
+          password: false,
+      })} else{
       setErrorLogin("");
       setTouched({
         useName: false,
@@ -86,7 +107,7 @@ const Login = () => {
         <h1 className='login-app-title'>Đăng Nhập</h1>
         <div className='label-input'>
           <label>Tên đăng nhập</label>
-          <input className='login-app-input' type='tel' placeholder='Tên đăng nhập' value={value.useName} onChange={onChangeValue("useName")} onBlur={onBlurField("useName")}/>
+          <input className='login-app-input' type='email' placeholder='Email' value={value.useName} onChange={onChangeValue("useName")} onBlur={onBlurField("useName")}/>
           {!check("useName") &&  <p className='error-register'>Vui lòng nhập tên đăng nhập</p>}
           {errorLogin && <p className='error-register error-login'>{errorLogin}</p>}
         </div>
@@ -94,10 +115,12 @@ const Login = () => {
           <label>Mật khẩu</label>
           <input className='login-app-input' type='password' placeholder='Mật khẩu' value={value.password} onChange={onChangeValue("password")} onBlur={onBlurField("password")}/>
           {!check("password") &&  <p className='error-register'>Vui lòng nhập mật khẩu</p>}
+          {!checkPassLength("password") && <p className='error-register'>Mật khẩu phải chứa ít nhất 6 kí tự</p>}
+          {errorPassAgain && <p className='error-register'>{errorPassAgain}</p>}
         </div>
       
         <div className='login-app-button-all'>
-          <button type="submit" className='login-app-button' onClick={onClickLogin}>Đăng Nhập</button>
+          <button type="submit" className='login-app-button' onSubmit={onClickLogin}>Đăng Nhập</button>
         </div>
         <p className='login-app-res'>Nếu chưa có tài khoản xin vui lòng <NavLink className='login-app-register' to={"/register"}>đăng ký ngay</NavLink></p>
       </form>
