@@ -70,7 +70,7 @@ const Login = () => {
         useName: "",
         password: "",
       });
-    } else if (value.passwordRegister.length < 6){
+    } else if (value.password.length < 6){
       setErrorPassAgain("Mật khẩu phải chứa ít nhất 6 ký tự");
       setValue({
           useName: "",

@@ -1,6 +1,6 @@
 import { Button } from 'antd';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
     let login = sessionStorage.getItem('login') ? JSON.parse(sessionStorage.getItem('login')) : null;
@@ -12,13 +12,15 @@ const Navbar = () => {
         <div className='navbar-all-login'>
             <div className='navbar-login'>
                 <div className='navbar-opp'>
-                    <p className='title-web'>Movies Chill</p>
+                    <Link className='title-web-link' to={"/"}>
+                        <p className='title-web'>Movies Chill</p>
+                    </Link>
                     <ul className='opp-nav-all'>
-                        <NavLink to={"/"} className={"opp-nav"}>Tìm Kiếm</NavLink>
-                        <NavLink to={"/"} className={"opp-nav"}>Phim Hót</NavLink>
-                        <NavLink to={"/"} className={"opp-nav"}>Phim Lẻ</NavLink>
-                        <NavLink to={"/"} className={"opp-nav"}>Phim Bộ</NavLink>
-                        <NavLink to={"/"} className={"opp-nav"}>Phim Mới</NavLink>
+                        <NavLink to={"/search"} className={"opp-nav"}>Tìm Kiếm</NavLink>
+                        <NavLink to={"/hotmovies"} className={"opp-nav"}>Phim Hot</NavLink>
+                        <NavLink to={"/singlemovie"} className={"opp-nav"}>Phim Lẻ</NavLink>
+                        <NavLink to={"/seriesmovie"} className={"opp-nav"}>Phim Bộ</NavLink>
+                        <NavLink to={"/newmovie"} className={"opp-nav"}>Phim Mới</NavLink>
                         <NavLink to={"/faq"} className={"opp-nav"}>FAQ</NavLink>
                     </ul>
                 </div>

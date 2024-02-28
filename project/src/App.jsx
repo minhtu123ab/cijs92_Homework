@@ -6,6 +6,12 @@ import Register from './components/Register';
 import Home from './components/Home';
 import FAQ from './components/FAQ';
 import Navbar from './components/Navbar';
+import HotMovies from './components/HotMovies';
+import SingleMovie from './components/SingleMovie';
+import SeriesMovie from './components/SeriesMovie';
+import NewMovie from './components/NewMovie';
+import Search from './components/Search';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -27,7 +33,13 @@ const RoutesWithNavbar = () => {
         <Route path='/faq' element={<FAQ/>}/>
         <Route path='/login' element={<Login />}/>
         <Route path='/register' element={<Register />}/>
-      </Routes>
+        <Route path='/hotmovies' element={<HotMovies />}/>
+        <Route path='/singlemovie' element={<SingleMovie />}/>
+        <Route path='/seriesmovie' element={<SeriesMovie />}/>
+        <Route path='/newmovie' element={<NewMovie />}/>
+        <Route path='/search' element={<Search />}/>
+        </Routes>
+      {!hideNavbarPaths.includes(location.pathname) && <Footer />}  
     </div>
   );
 }
