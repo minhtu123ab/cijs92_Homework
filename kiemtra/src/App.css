@@ -1,0 +1,73 @@
+.navbar{
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid rgb(82, 82, 82);
+}
+.opp{
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  padding-bottom: 10px;
+  
+}
+.active{
+  border-bottom: 2px solid blue;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 100px;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+.btn-input{
+  display: flex;
+  gap: 10px;
+}
+.all{
+  width: 380px;
+}
+.active-all{
+  width: 380px;
+}
+.option-all{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+.option-all-completed{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  justify-content: space-between;
+}
+.op-all{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+
+  width: 100%;
+}
+.option{
+  width: 18px;
+}
+.completed{
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.btn-delete-all{
+  margin-top: 30px;
+}
+.nameop{
+  padding-top: 5px;
+}
