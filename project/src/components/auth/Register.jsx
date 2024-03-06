@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
-import { Button } from "antd";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
+    localStorage.setItem("register", JSON.stringify([
+        {
+            nameRegister : "admin",
+            useNameRegister : "admin@gmail.com",
+            passwordRegister : "admin123",
+            passwordRegisterAgain : "admin123",
+            count : 0,
+            rank : "diamond",
+            cmt : []
+        }
+    ]));
     let register = localStorage.getItem("register");
     register = register ? JSON.parse(register) : [];
+    
     const navigate = useNavigate();
     const [value, setValue] = useState({
         nameRegister: "",
@@ -162,7 +173,7 @@ const Register = () => {
             toast.success("Đăng ký thành công, hãy đăng nhập");
             setTimeout(() => {
                 navigate("/login"); 
-            }, 1500);
+            }, 1000);
         }
     };
     
