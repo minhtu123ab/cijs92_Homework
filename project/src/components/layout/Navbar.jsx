@@ -4,6 +4,9 @@ import { NavLink, Link } from 'react-router-dom';
 import { IoIosSearch } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { FaUser } from "react-icons/fa6";
+import { IoDiamond } from "react-icons/io5";
+import { GiGoldBar } from "react-icons/gi";
+import { GiSilverBullet } from "react-icons/gi";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +50,7 @@ const Navbar = () => {
                         <NavLink to={"/seriesmovie"} className={"opp-nav"}>Hoạt Hình</NavLink>
                         <NavLink to={"/newmovie"} className={"opp-nav"}>Phim Mới</NavLink>
                         <NavLink to={"/faq"} className={"opp-nav"}>FAQ</NavLink>
+                        {login && login[0].name == 'Administrator' && <NavLink className={"opp-nav"} to={"/admin"}>Admin</NavLink>}
                     </ul>
                 </div>
                 {
@@ -59,6 +63,15 @@ const Navbar = () => {
                         }}>Đăng Nhập</Button>
                     </NavLink> : <div className='name-people-all'>
                         <FaUser size={35} className='icon-user'/>
+                        {login && login[0].rank == "Diamond" && <IoDiamond size={33} style={{
+                            color: "white",
+                        }}/>}
+                        {login && login[0].rank == "Gold" && <GiGoldBar size={33} style={{
+                            color: "white",
+                        }}/>}
+                        {login && login[0].rank == "Silver" && <GiSilverBullet size={33} style={{
+                            color: "white",
+                        }}/>}
                         <p className='name-people'>{login[0].name}</p>
                         <NavLink to={"/login"}>
                             <Button style={{

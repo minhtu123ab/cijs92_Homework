@@ -20,6 +20,7 @@ const PushMovie = () => {
         comment: [],
         script: "",
         director: "",
+        rankMovie: "",
     })
     function formatDate(date) {
         let day = date.getDate();
@@ -35,7 +36,7 @@ const PushMovie = () => {
 
       const onSubmit = async () => {
         // Đầu tiên kiểm tra các giá trị nhập vào
-        if (!value.movieName || !value.description || !value.image || !value.background || !value.time || !value.nation || !value.category || !value.video || !value.director || !value.script) {
+        if (!value.movieName || !value.description || !value.image || !value.background || !value.time || !value.nation || !value.category || !value.video || !value.director || !value.script || !value.rankMovie) {
             toast.error("Bạn cần nhập đầy đủ thông tin");
             return; // Dừng hàm nếu thiếu thông tin
         }
@@ -64,6 +65,7 @@ const PushMovie = () => {
                 comment: [],
                 script: "",
                 director: "",
+                rankMovie:"",
             });
         } catch (error) {
             console.error("There was an error!", error);
@@ -116,6 +118,10 @@ const PushMovie = () => {
             <div>
                 <label >Đạo diễn</label>
                 <Input value={value.director} onChange={(e) => setValue({...value, director: e.target.value})}/>
+            </div>
+            <div>
+                <label >Rank phim</label>
+                <Input value={value.rankMovie} onChange={(e) => setValue({...value, rankMovie: e.target.value})}/>
             </div>
             <Button onClick={onSubmit} size="large" type='primary' className='btn-push'>Gửi</Button>
         </form>

@@ -6,7 +6,7 @@ const SeriesMovie = () => {
   const data = useContext(dataAll)
   const [cartoonMovie , setCartoonMovie] = useState([]);
   useEffect(() => {
-    const cartoon = data.filter((item) => item.category === "cartoon");
+    const cartoon = data.filter((item) => item.category === "Cartoon");
     setCartoonMovie(cartoon);
   },[data]) 
   return (

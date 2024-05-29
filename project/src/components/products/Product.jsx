@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Product = ({item}) => {
   
+  
   const navigate = useNavigate();
   const onClick = (itemId) => {
     const isLoggedIn = sessionStorage.getItem('login');
@@ -21,6 +22,7 @@ const Product = ({item}) => {
             <img className='img-item' src={item.image}/>
             <p className='movieName'>{item.movieName}</p>
             <p className='views'>Lượt xem: {item.count}</p>
+            <p className='views rank'>Rank phim: {item.rankMovie}</p>
           </div>     
         ))}
       </div>

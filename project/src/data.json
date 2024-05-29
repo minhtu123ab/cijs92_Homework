@@ -11,20 +11,36 @@
       "nation": "Mỹ",
       "releaseDate": "06/02/2023",
       "director": "David Ayer",
+      "rankMovie": "Silver",
       "script": "Kurt Wimmer",
-      "count": 150,
-      "category": "marvel",
-      "video": "",
+      "count": 310,
+      "category": "Marvel",
+      "video": "https://www.youtube.com/watch?v=yGB8aj1QhIM",
       "comment": [
         {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
+          "id": 1709753966761,
+          "name": "Administrator",
+          "content": "Phim hay lắm"
         },
         {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
+          "id": 1709811662370,
+          "name": "Lê Minh Tuss",
+          "content": "phim hay quá ạ"
+        },
+        {
+          "id": 1709812063762,
+          "name": "Lê Tú",
+          "content": "phim hay ạ"
+        },
+        {
+          "id": 1709813405734,
+          "name": "tu minh",
+          "content": "phim hay"
+        },
+        {
+          "id": 1710330259652,
+          "name": "Khúc Vân Anh",
+          "content": "phim hay quá"
         }
       ]
     },
@@ -37,37 +53,18 @@
       "episode": "01",
       "time": "1 giờ 45 phút",
       "releaseDate": "13/09/2019",
-      "count": 247,
+      "count": 255,
       "nation": "Nhật Bản",
+      "rankMovie": "Silver",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=2P0dvE-4uCU",
       "comment": [
         {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 1709562218668,
-          "name": "Lê Minh Tú",
-          "content": "phim dở"
-        },
-        {
-          "id": 1709562254879,
-          "name": "Lê Minh Tú",
-          "content": "hay"
-        },
-        {
-          "id": 1709562276030,
-          "name": "Lê Minh Tú",
-          "content": "hay"
+          "id": 1709813443787,
+          "name": "tu minh",
+          "content": "phim hay quá"
         }
       ]
     },
@@ -80,27 +77,18 @@
       "episode": "1018",
       "time": "1 giờ 45 phút",
       "releaseDate": "02/05/2023",
-      "count": 144,
+      "count": 254,
       "nation": "Nhật Bản",
+      "rankMovie": "Gold",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=JAMJWbF8dsM",
       "comment": [
         {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 1709539261924,
-          "name": "Lê Minh Tú",
-          "content": "phim hay quá ạ"
+          "id": 1709811723689,
+          "name": "Lê Minh Tuss",
+          "content": "phim hay lắm ạ"
         }
       ]
     },
@@ -113,27 +101,18 @@
       "episode": "250",
       "time": "1 giờ 45 phút",
       "releaseDate": "15/05/2021",
-      "count": 155,
+      "count": 324,
       "nation": "Nhật Bản",
+      "rankMovie": "Gold",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=EznmW0LnXis",
       "comment": [
         {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 1709552737617,
-          "name": "Khúc Thị Vân Anh",
-          "content": "phim hay quá ạ"
+          "id": 1709812168466,
+          "name": "Lê Tú",
+          "content": "phim hay"
         }
       ]
     },
@@ -146,24 +125,14 @@
       "episode": "28",
       "time": "1 giờ 45 phút",
       "releaseDate": "13/08/2023",
-      "count": 203,
+      "count": 320,
       "nation": "Mỹ",
+      "rankMovie": "Gold",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "horrified",
-      "video": "",
-      "comment": [
-        {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        }
-      ]
+      "category": "Horrified",
+      "video": "https://www.youtube.com/watch?v=yGEtg6_Kb5Y",
+      "comment": []
     },
     {
       "id": "6",
@@ -174,24 +143,14 @@
       "episode": "07",
       "time": "1 giờ 45 phút",
       "releaseDate": "01/02/2024",
-      "count": 135,
+      "count": 136,
       "nation": "Nhật Bản",
+      "rankMovie": "Silver",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
-      "comment": [
-        {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        }
-      ]
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=RXHGMlHZFvE",
+      "comment": []
     },
     {
       "id": "7",
@@ -202,24 +161,14 @@
       "episode": "28",
       "time": "1 giờ 45 phút",
       "releaseDate": "02/05/2022",
-      "count": 153,
+      "count": 136,
       "nation": "Nhật Bản",
       "director": "David Ayer",
+      "rankMovie": "Silver",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
-      "comment": [
-        {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        }
-      ]
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=qMllATX6XY4",
+      "comment": []
     },
     {
       "id": "8",
@@ -230,24 +179,14 @@
       "episode": "28",
       "time": "1 giờ 45 phút",
       "releaseDate": "12/05/2023",
-      "count": 402,
+      "count": 149,
       "nation": "Nhật Bản",
+      "rankMovie": "Gold",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
-      "comment": [
-        {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        }
-      ]
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=AatcccQqOaQ",
+      "comment": []
     },
     {
       "id": "9",
@@ -260,60 +199,199 @@
       "releaseDate": "30/1/2024",
       "count": 212,
       "nation": "Nhật Bản",
+      "rankMovie": "Diamond",
       "director": "David Ayer",
       "script": "Kurt Wimmer",
-      "category": "cartoon",
-      "video": "",
-      "comment": [
-        {
-          "id": 1,
-          "name": "Lê Minh Tú",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 2,
-          "name": "Nam",
-          "content": "Phim hay quá"
-        },
-        {
-          "id": 1709564089236,
-          "name": "Lê Minh Tú",
-          "content": "phim hay thế"
-        }
-      ]
+      "category": "Cartoon",
+      "video": "https://www.youtube.com/watch?v=LOO3xyFijDk",
+      "comment": []
     },
     {
-      "id": "6f11",
+      "id": "7907",
       "movieName": "Mai",
-      "description": "\"Mai\" xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai (do Phương Anh Đào thủ vai) có số phận rất đặc biệt. Bởi làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn soi mói, phán xét từ những người xung quanh. Và rồi Mai gặp Dương (Tuấn Trần) - chàng trai đào hoa lãng tử. Những tưởng bản thân không còn thiết tha yêu đương và mưu cầu hạnh phúc cho riêng mình thì khao khát được sống một cuộc đời mới trong Mai trỗi dậy khi Dương tấn công cô không khoan nhượng. Họ cho mình những khoảnh khắc tự do, say đắm và tràn đầy tiếng cười. Liệu cặp đôi ấy có nắm giữ được niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay nghiệt, bất công? \"Mai\" - một câu chuyện tâm lý, tình cảm pha lẫn nhiều tràng cười vui nhộn với sự đầu tư mạnh tay nhất trong ba phim của Trấn Thành hứa hẹn sẽ đem đến cho khán giả những phút giây thật sự ý nghĩa trong mùa Tết năm nay.",
+      "description": "\\\"Mai\\\" xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai (do Phương Anh Đào thủ vai) có số phận rất đặc biệt. Bởi làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn soi mói, phán xét từ những người xung quanh. Và rồi Mai gặp Dương (Tuấn Trần) - chàng trai đào hoa lãng tử. Những tưởng bản thân không còn thiết tha yêu đương và mưu cầu hạnh phúc cho riêng mình thì khao khát được sống một cuộc đời mới trong Mai trỗi dậy khi Dương tấn công cô không khoan nhượng. Họ cho mình những khoảnh khắc tự do, say đắm và tràn đầy tiếng cười. Liệu cặp đôi ấy có nắm giữ được niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay nghiệt, bất công? \\\"Mai\\\" - một câu chuyện tâm lý, tình cảm pha lẫn nhiều tràng cười vui nhộn với sự đầu tư mạnh tay nhất trong ba phim của Trấn Thành hứa hẹn sẽ đem đến cho khán giả những phút giây thật sự ý nghĩa trong mùa Tết năm nay.",
       "image": "https://vtv1.mediacdn.vn/thumb_w/640/562122370168008704/2023/11/28/photo-1-17011453442011344132442.jpg",
       "background": "https://i.ytimg.com/vi/Yz96EBNwMGw/maxresdefault.jpg",
       "time": "2 giờ 11 phút",
       "nation": "Việt Nam",
-      "director": "Trấn Thành",
+      "releaseDate": "07/03/2024",
+      "count": 2,
+      "category": "Mentality",
+      "video": "https://www.youtube.com/watch?v=EX6clvId19s",
+      "comment": [
+        {
+          "id": 1709813835142,
+          "name": "Administrator",
+          "content": "phim hay quá"
+        }
+      ],
       "script": "Trấn Thành",
-      "releaseDate": "05/03/2024",
-      "count": 4,
-      "category": "mentality",
-      "video": "abc",
-      "comment": []
+      "director": "Trấn Thành",
+      "rankMovie": "Diamond"
+    },
+    {
+      "id": "911d",
+      "movieName": "Nhà Bà Nữ",
+      "description": "The House of No Man (Nhà Bà Nữ): xoay quanh gia đình của bà Nữ (nghệ sĩ Lê Giang đảm nhận) - người làm nghề bán bánh canh. Truyện phim khắc họa mối quan hệ phức tạp, đa chiều xảy ra với các thành viên trong gia đình. Câu tagline (thông điệp) chính \"Mỗi gia đình đều có những bí mật\" chứa nhiều ẩn ý về nội dung bộ phim muốn gửi gắm.",
+      "image": "https://upload.wikimedia.org/wikipedia/vi/6/6f/%C3%81p_ph%C3%ADch_phim_Nh%C3%A0_b%C3%A0_N%E1%BB%AF.jpg",
+      "background": "https://i.ytimg.com/vi/IkaP0KJWTsQ/maxresdefault.jpg",
+      "time": "1 giờ 43 phút",
+      "nation": "Việt Nam",
+      "releaseDate": "13/03/2024",
+      "count": 1,
+      "category": "Mentality",
+      "video": "https://youtu.be/IkaP0KJWTsQ",
+      "comment": [],
+      "script": "Trấn Thành",
+      "director": "Trấn Thành",
+      "rankMovie": "Gold"
     }
   ],
-  "user" : [
-    {   
-        "id" : 1,
-        "nameRegister" : "admin",
-        "passwordRegister" : "admin123",
-        "passwordRegisterAgain" : "admin123",
-        "useNameRegister" : "admin@gmail.com",
-        "count" : 0,
-        "rank" : "diamond",
-        "cmt" : [
-            {
-                "movieName" : "",
-                "content" : ""
-            }
-        ]
+  "user": [
+    {
+      "id": "1",
+      "nameRegister": "Administrator",
+      "passwordRegister": "admin123",
+      "passwordRegisterAgain": "admin123",
+      "useNameRegister": "admin@gmail.com",
+      "count": 121,
+      "rank": "Diamond",
+      "cmt": [
+        {
+          "id": 1709753966761,
+          "movieName": "Iron Man I",
+          "content": "Phim hay lắm"
+        },
+        {
+          "id": 1709812600397,
+          "movieName": "Mai",
+          "content": "phim hay quá"
+        },
+        {
+          "id": 1709813835142,
+          "movieName": "Mai",
+          "content": "phim hay quá"
+        }
+      ]
+    },
+    {
+      "id": "8861",
+      "nameRegister": "Lê Minh Tú",
+      "useNameRegister": "minhtu@gmail.com",
+      "passwordRegister": "minhtu123",
+      "passwordRegisterAgain": "minhtu123",
+      "count": 0,
+      "rank": "Silver",
+      "cmt": []
+    },
+    {
+      "id": "c774",
+      "nameRegister": "Minh Tú",
+      "useNameRegister": "minhtu123@gmail.com",
+      "passwordRegister": "minhtu123",
+      "passwordRegisterAgain": "minhtu123",
+      "count": 0,
+      "rank": "Silver",
+      "cmt": []
+    },
+    {
+      "id": "4cf7",
+      "nameRegister": "Vân Anh",
+      "useNameRegister": "vanh@gmail.com",
+      "passwordRegister": "vanh123",
+      "passwordRegisterAgain": "vanh123",
+      "count": 0,
+      "rank": "Silver",
+      "cmt": []
+    },
+    {
+      "id": "836e",
+      "nameRegister": "Tú Lê",
+      "useNameRegister": "tu@gmail.com",
+      "passwordRegister": "tu12345",
+      "passwordRegisterAgain": "tu12345",
+      "count": 5,
+      "rank": "Gold",
+      "cmt": []
+    },
+    {
+      "id": "cbe9",
+      "nameRegister": "Lê Minh Tuss",
+      "useNameRegister": "leminhtu13082003@gmail.com",
+      "passwordRegister": "minhtu123",
+      "passwordRegisterAgain": "minhtu123",
+      "count": 10,
+      "rank": "Diamond",
+      "cmt": [
+        {
+          "id": 1709811662370,
+          "movieName": "Iron Man I",
+          "content": "phim hay quá ạ"
+        },
+        {
+          "id": 1709811723689,
+          "movieName": "One Peace",
+          "content": "phim hay lắm ạ"
+        }
+      ]
+    },
+    {
+      "id": "4617",
+      "nameRegister": "Lê Tú",
+      "useNameRegister": "letu@gmail.com",
+      "passwordRegister": "letu123",
+      "passwordRegisterAgain": "letu123",
+      "count": 10,
+      "rank": "Diamond",
+      "cmt": [
+        {
+          "id": 1709812063762,
+          "movieName": "Iron Man I",
+          "content": "phim hay ạ"
+        },
+        {
+          "id": 1709812168466,
+          "movieName": "Boruto: Naruto Next Generations",
+          "content": "phim hay"
+        }
+      ]
+    },
+    {
+      "id": "916e",
+      "nameRegister": "tu minh",
+      "useNameRegister": "minh@gmail.com",
+      "passwordRegister": "minh123",
+      "passwordRegisterAgain": "minh123",
+      "count": 11,
+      "rank": "Diamond",
+      "cmt": [
+        {
+          "id": 1709813405734,
+          "movieName": "Iron Man I",
+          "content": "phim hay"
+        },
+        {
+          "id": 1709813443787,
+          "movieName": "Weather With You",
+          "content": "phim hay quá"
+        }
+      ]
+    },
+    {
+      "id": "1e22",
+      "nameRegister": "Khúc Vân Anh",
+      "useNameRegister": "vananh@gmail.com",
+      "passwordRegister": "vanvan",
+      "passwordRegisterAgain": "vanvan",
+      "count": 11,
+      "rank": "Diamond",
+      "cmt": [
+        {
+          "id": 1710330259652,
+          "movieName": "Iron Man I",
+          "content": "phim hay quá"
+        }
+      ]
     }
   ]
 }

@@ -339,6 +339,15 @@ label{
     object-fit: cover;
     height: 40vw;
 }
+
+.background-video-detail-2{
+    width: 100%;
+    margin-left: 28%;
+    margin-top: 8.7%;
+    margin-bottom: 10%;
+    transform: scale(2.1,1.8);
+    justify-content: center;
+}
 .background-video-detail{
     width: 100%;
     padding-left: 7%;
@@ -445,7 +454,7 @@ label{
 }
 /* Tùy chỉnh kích thước của thanh cuộn */
 ::-webkit-scrollbar {
-    width: 8px; /* Đối với thanh cuộn dọc */
+    width: 5px; /* Đối với thanh cuộn dọc */
     height: 4px; /* Đối với thanh cuộn ngang */
 }
 
@@ -592,7 +601,7 @@ label{
   }
 
   .table-header th, .table-content td {
-    min-width: 117px; /* Ví dụ: đặt chiều rộng tối thiểu cho mỗi cột */
+    min-width: 120px; /* Ví dụ: đặt chiều rộng tối thiểu cho mỗi cột */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -13,6 +13,7 @@ const Information = ({item}) => {
             <p className='releaseDate'>ĐẠO DIỄN :  {item.script}</p>
             <p className='releaseDate'>QUỐC GIA :  {item.nation}</p>
             <p className='releaseDate'>KHỞI CHIẾU :  {item.releaseDate}</p>
+            <p className='releaseDate'>RANK PHIM :  {item.rankMovie}</p>
         </div>
             <p className='description'>{item.description}</p>
     </div>

@@ -1,28 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { FaRegComments } from "react-icons/fa";
+import axios from 'axios';
 
 const Comment = ({ item }) => {
+    const user = JSON.parse(sessionStorage.getItem("login"));
+
+    const URL = axios.create({
+        baseURL: "http://localhost:3000"
+    });
+
+    const [register, setRegister] = useState(null);
+
+    useEffect(() => {
+        const getDataUser = async () => {
+            try {
+                const response = await URL.get(`/user/${user[0].id}`);
+                setRegister(response.data);
+            } catch (error) {
+                console.error("Failed to fetch user data", error);
+            }
+        };
+        if (user && user[0] && user[0].id) {
+            getDataUser();
+        }
+    }, [user]);
+
+    useEffect(() => {
+        if (register && register.cmt) {
+            setCommentsUser(register.cmt);
+        }
+    }, [register]);
+
     const [comments, setComments] = useState(item[0].comment);
+    const [commentsUser, setCommentsUser] = useState([]);
     const [comment, setComment] = useState("");
 
     useEffect(() => {
         setComments(item[0].comment);
-        console.log("Comment")
     }, [item]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Kiểm tra xem ô input có rỗng hoặc chỉ chứa khoảng trắng không
         if (!comment.trim()) {
             alert("Bình luận không được để trống!");
-            return; // Ngừng thực thi hàm nếu ô input rỗng hoặc chỉ chứa khoảng trắng
+            return;
         }
 
         const movieId = item[0].id;
-        const nameComment = JSON.parse(sessionStorage.getItem("login"))[0].name;
+        const nameComment = user[0].name;
         const newComment = {
             id: Date.now(),
             name: nameComment,
+            content: comment,
+        };
+        const newCommentUser = {
+            id: Date.now(),
+            movieName: item[0].movieName,
             content: comment,
         };
 
@@ -36,11 +69,19 @@ const Comment = ({ item }) => {
                     comment: [...comments, newComment]
                 }),
             });
+            const responseUser = await fetch(`http://localhost:3000/user/${user[0].id}`, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    cmt: [...commentsUser, newCommentUser]
+                }),
+            });
 
-            if (response.ok) {
-                console.log("Bình luận đã được thêm");
+            if (response.ok && responseUser.ok) {
                 setComments([...comments, newComment]);
-                setComment(""); // Reset input field sau khi gửi thành công
+                setComment("");
             } else {
                 console.error("Lỗi khi thêm bình luận");
             }
@@ -75,7 +116,7 @@ const Comment = ({ item }) => {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default Comment;

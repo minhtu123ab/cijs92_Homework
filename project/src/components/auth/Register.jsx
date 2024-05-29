@@ -1,22 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
 
 const Register = () => {
-    localStorage.setItem("register", JSON.stringify([
-        {
-            nameRegister : "admin",
-            useNameRegister : "admin@gmail.com",
-            passwordRegister : "admin123",
-            passwordRegisterAgain : "admin123",
-            count : 0,
-            rank : "diamond",
-            cmt : []
-        }
-    ]));
-    let register = localStorage.getItem("register");
-    register = register ? JSON.parse(register) : [];
+    const URL = axios.create({
+        baseURL: "http://localhost:3000/user"
+    });
+
+    const [register, setRegister] = useState([]);
+
+    useEffect(() => {
+        const getDataUser = async () => {
+            try {
+                const response = await URL.get('/'); // Đảm bảo rằng bạn gọi đến endpoint chính xác
+                setRegister(response.data); // Giả sử dữ liệu người dùng nằm trong response.data
+            } catch (error) {
+                console.error("Failed to fetch users", error);
+                toast.error("Failed to load user data");
+            }
+        };
+        getDataUser();
+        console.log(register)
+    }, []); // Đảm bảo rằng useEffect này chỉ chạy một lần khi component được mount
+
     
     const navigate = useNavigate();
     const [value, setValue] = useState({
@@ -24,6 +32,9 @@ const Register = () => {
         useNameRegister: "",
         passwordRegister: "",
         passwordRegisterAgain: "",
+        count : 0,
+        rank : "Silver",
+        cmt : []
     });
 
     const [touched, setTouched] = useState({
@@ -85,7 +96,7 @@ const Register = () => {
     };
     
 
-    const onClickRegister = (e) => {
+    const onClickRegister = async (e) => {
         e.preventDefault();
         let countName = 0;
         let countUseName = 0;
@@ -104,6 +115,9 @@ const Register = () => {
                 useNameRegister: "",
                 passwordRegister: "",
                 passwordRegisterAgain: "",
+                count : 0,
+                rank : "Silver",
+                cmt : []
             });
             setTouched({
                 nameRegister: false,
@@ -118,6 +132,9 @@ const Register = () => {
                 useNameRegister: "",
                 passwordRegister: "",
                 passwordRegisterAgain: "",
+                count : 0,
+                rank : "Silver",
+                cmt : []
             });
             setTouched({
                 nameRegister: false,
@@ -132,6 +149,9 @@ const Register = () => {
                 useNameRegister: "",
                 passwordRegister: "",
                 passwordRegisterAgain: "",
+                count : 0,
+                rank : "Silver",
+                cmt : []
             });
             setTouched({
                 nameRegister: false,
@@ -146,6 +166,9 @@ const Register = () => {
                 useNameRegister: "",
                 passwordRegister: "",
                 passwordRegisterAgain: "",
+                count : 0,
+                rank : "Silver",
+                cmt : []
             });
             setTouched({
                 nameRegister: false,
@@ -154,27 +177,35 @@ const Register = () => {
                 passwordRegisterAgain: false,
             });
         } else {
-            register.push(value);
-            localStorage.setItem("register", JSON.stringify(register));
-            setErrorMessage("");
-            setErrorPassAgain(""); 
-            setValue({
-                nameRegister: "",
-                useNameRegister: "",
-                passwordRegister: "",
-                passwordRegisterAgain: "",
-            });
-            setTouched({
-                nameRegister: false,
-                useNameRegister: false,
-                passwordRegister: false,
-                passwordRegisterAgain: false,
-            });
-            toast.success("Đăng ký thành công, hãy đăng nhập");
-            setTimeout(() => {
-                navigate("/login"); 
-            }, 1000);
-        }
+            try {
+                const newValue = {...value}
+                const response = await axios.post('http://localhost:3000/user', newValue);
+                setErrorMessage("");
+                setErrorPassAgain(""); 
+                setValue({
+                    nameRegister: "",
+                    useNameRegister: "",
+                    passwordRegister: "",
+                    passwordRegisterAgain: "",
+                    count : 0,
+                    rank : "silver",
+                    cmt : []
+                });
+                setTouched({
+                    nameRegister: false,
+                    useNameRegister: false,
+                    passwordRegister: false,
+                    passwordRegisterAgain: false,
+                });
+                toast.success("Đăng ký thành công, hãy đăng nhập");
+                setTimeout(() => {
+                    navigate("/login"); 
+                }, 1000);
+            } catch (e) {
+                console.error("There was an error!", error);
+                toast.error("Có lỗi xảy ra khi thêm thông tin");
+            } 
+        } 
     };
     
     return (

@@ -80,6 +80,7 @@ const Statistical = () => {
                 <th>Ngày phát hành</th>
                 <th>Số lượt xem</th>
                 <th>Số bình luận</th>
+                <th>Rank phim</th>
                 <th>Tùy chọn</th>
               </tr>
             </thead>
@@ -97,6 +98,7 @@ const Statistical = () => {
                   <td>{item.releaseDate}</td>
                   <td>{item.count}</td>
                   <td>{item.comment.length}</td>
+                  <td>{item.rankMovie}</td>
                   <td>
                     <Button 
                       type="primary" 

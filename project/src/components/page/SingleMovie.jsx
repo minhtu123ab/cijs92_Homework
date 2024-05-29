@@ -5,7 +5,7 @@ const SingleMovie = () => {
   const data = useContext(dataAll)
   const [singleMovie , setSingleMovie] = useState([]);
   useEffect(() => {
-    const Single = data.filter((item) => item.category != "cartoon");
+    const Single = data.filter((item) => item.category != "Cartoon");
     setSingleMovie(Single);
   },[data]) 
   return (

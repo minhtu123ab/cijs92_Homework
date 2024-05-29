@@ -1,12 +1,34 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink, useNavigate } from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 const Login = () => {
+
+  const URL = axios.create({
+    baseURL: "http://localhost:3000/user"
+});
+
+const [register, setRegister] = useState([]);
+
+useEffect(() => {
+    const getDataUser = async () => {
+        try {
+            const response = await URL.get('/'); // Đảm bảo rằng bạn gọi đến endpoint chính xác
+            setRegister(response.data); // Giả sử dữ liệu người dùng nằm trong response.data
+        } catch (error) {
+            console.error("Failed to fetch users", error);
+            toast.error("Failed to load user data");
+        }
+    };
+    getDataUser();
+    console.log(register)
+}, []); // Đảm bảo rằng useEffect này chỉ chạy một lần khi component được mount
   
   const navigate = useNavigate();
   const [value, setValue] = useState({
+    id: "",
     name: "",
     useName : "",
     password : "",
@@ -14,9 +36,6 @@ const Login = () => {
   
   const [errorLogin, setErrorLogin] = useState("")
   const [errorPassAgain, setErrorPassAgain] = useState("")
-
-  let register = localStorage.getItem("register")
-  register = register ? JSON.parse(register) : []
 
   
   const [touched, setTouched] = useState({
@@ -54,7 +73,7 @@ const Login = () => {
     for (let i = 0 ; i < register.length; i++) {
       if( value.password === register[i].passwordRegister && value.useName === register[i].useNameRegister){
         count++;
-        login.push({...value, name: register[i].nameRegister});
+        login.push({...value,id : register[i].id, name: register[i].nameRegister, count: register[i].count, rank: register[i].rank});
       }
     }
     sessionStorage.setItem('login', JSON.stringify(login));
