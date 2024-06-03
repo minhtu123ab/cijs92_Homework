@@ -238,13 +238,49 @@
       "time": "1 giờ 43 phút",
       "nation": "Việt Nam",
       "releaseDate": "13/03/2024",
-      "count": 1,
+      "count": 2,
       "category": "Mentality",
       "video": "https://youtu.be/IkaP0KJWTsQ",
-      "comment": [],
+      "comment": [
+        {
+          "id": 1717394226165,
+          "name": "Administrator",
+          "content": "rhay"
+        }
+      ],
       "script": "Trấn Thành",
       "director": "Trấn Thành",
       "rankMovie": "Gold"
+    },
+    {
+      "0": "D",
+      "1": "i",
+      "2": "a",
+      "3": "m",
+      "4": "o",
+      "5": "n",
+      "6": "d",
+      "id": "dda9",
+      "rankMovie": "Diamond",
+      "movieName": "Doraemon",
+      "image": "https://cdn.tuoitre.vn/471584752817336320/2024/5/27/doraemon-va-ban-giao-huong-dia-cau-1716794248664441752435.jpg",
+      "background": "https://minhtuanmobile.com/uploads/blog/lich-chieu-phim-doraemon-nobita-va-ban-giao-huong-dia-cau-240507020844.jpg",
+      "time": "1 giờ 30 phút",
+      "nation": "Nhật Bản",
+      "video": "https://youtu.be/MKblSJt3BaQ",
+      "category": "Cartoon",
+      "description": "Phim nói về 1 con mèo và 1 thg đeo kính học dốt",
+      "script": "Shogakukan",
+      "director": "Shogakukan",
+      "releaseDate": "03/06/2024",
+      "comment": [
+        {
+          "id": 1717393999459,
+          "name": "Administrator",
+          "content": "Hay quá"
+        }
+      ],
+      "count": 3
     }
   ],
   "user": [
@@ -254,7 +290,7 @@
       "passwordRegister": "admin123",
       "passwordRegisterAgain": "admin123",
       "useNameRegister": "admin@gmail.com",
-      "count": 121,
+      "count": 126,
       "rank": "Diamond",
       "cmt": [
         {
@@ -271,6 +307,16 @@
           "id": 1709813835142,
           "movieName": "Mai",
           "content": "phim hay quá"
+        },
+        {
+          "id": 1717393999459,
+          "movieName": "Doraemon",
+          "content": "Hay quá"
+        },
+        {
+          "id": 1717394226165,
+          "movieName": "Nhà Bà Nữ",
+          "content": "rhay"
         }
       ]
     },
